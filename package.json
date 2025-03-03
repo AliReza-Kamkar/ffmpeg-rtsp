@@ -1,10 +1,10 @@
 {
   "name": "ffmpeg-rtsp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "dist/index.js",
   "author": "AliReza-Kamkar",
-  "description": "Wrapper for managing ffmpeg rtsp stream processes",
+  "description": "Simplify FFmpeg RTSP stream handling and process control",
   "homepage": "https://github.com/AliReza-Kamkar/ffmpeg-rtsp#readme",
   "scripts": {
     "build": "tsup",
@@ -14,11 +14,19 @@
     "type": "git",
     "url": "git+https://github.com/AliReza-Kamkar/ffmpeg-rtsp.git"
   },
+  "dependencies": {
+    "which": "^5.0.0"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@eslint/js": "^9.21.0",
     "@types/node": "^22.13.8",
+    "@types/which": "^3.0.4",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2",
+    "typescript-eslint": "^8.25.0",
     "vitest": "^3.0.7"
   },
   "keywords": [

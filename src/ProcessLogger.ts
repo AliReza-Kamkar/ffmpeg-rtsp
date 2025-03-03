@@ -29,4 +29,5 @@ export class ProcessLogger {
     if (!this.enable) return;
     console.error(this.options.key, ...args);
   }
+
 }
