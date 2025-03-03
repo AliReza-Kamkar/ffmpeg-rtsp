@@ -8,7 +8,8 @@
   "homepage": "https://github.com/AliReza-Kamkar/ffmpeg-rtsp#readme",
   "scripts": {
     "build": "tsup",
-    "lint:fix": "biome check --write ./src"
+    "lint:check": "eslint ./src",
+    "lint:fix": "eslint --fix ./src"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,6 @@
     "which": "^5.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
     "@eslint/js": "^9.21.0",
     "@types/node": "^22.13.8",
     "@types/which": "^3.0.4",

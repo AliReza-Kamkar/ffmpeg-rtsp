@@ -84,7 +84,8 @@ export abstract class FFmpegProcess extends EventEmitter {
         if (this.options.restartOnError) {
           setTimeout(() => this.start(), this.options.restartOnErrorTimeout);
         }
-      } else {
+      }
+      else {
         this.logger.log(
           `Stream died with code ${code} - will recreate when the next client connects`,
         );
