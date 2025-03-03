@@ -102,7 +102,7 @@ export abstract class FFmpegProcess extends EventEmitter {
     this.stream.on('error', (err: NodeJS.ErrnoException) => {
       if (err.code === 'ENOENT') {
         throw new Error(
-          "FFMpeg executable wasn't found. Install this package or try to set FFmpegProcess.executable path directly",
+          'FFMpeg executable wasn\'t found. Install this package or try to set FFmpegProcess.executable path directly',
         );
       }
       throw err;
